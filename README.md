@@ -1,24 +1,25 @@
-## Who is this for? ##
-This Vagrant project is made for developers who want an easy to use LAMP stack on their computer.
+## ¿Para quién está destinado este proyecto?
 
-It uses the Zend Community server from the zend repos. The Zend Server is an easy to use webinterface to Apache/PHP so even inexperienced users can easily view the apache logs, change php ini values and debug their code.
+Esta destinado para desarrolladores que trabajen con Zend Framework y necesiten un 
+Equipo con Zend Server instalado. 
 
-![Zend Server admin screenshot](https://github.com/LeonB/vagrant-zend-server/raw/master/zend-server-admin.jpg)
+Además se cuenta con un template para Zend Framework 1.12 preinstalado,
+con lo que es posible comenzar el desarrollo de un nuevo sistema con base en el template.
 
-## What does it contain? ##
-It's based on the precise32 box from www.vagrantbox.es and it contains the following extra software:
+## ¿Qué cosas contiene? ##
+Está basado en **precise32 box** desde www.vagrantbox.es y contiene el siguiente software:
 
 * zend-server-ce-php-5.3
 * phpmyadmin-zend-server
 * postfix
 
-## How to use it ##
-* clone the project
-* edit Vagrantfile and edit the puppet.facter variables
-* enter the directory and do a `vagrant up`
+## Como usar ##
+* Clona el proyecto
+* Modifica **Vagrantfile** y cambia las variables de puppet.facter 
+* Entra al directorio y ejecuta `vagrant up`
 
-The admin interface is on http://localhost:10081<br />
-The webserver can be accessed on http://localhost:8080
+Puedes acceder a la interface de administración de Zend Server: http://localhost:10081<br />
+Puedes acceder al webserver desde: http://localhost:8080
 
-`~/Public` (based on the Ubuntu desktop homedirectory layout) is mounted to the VM's `/var/www`.
+`/vagrant/public` (based on the Ubuntu desktop homedirectory layout) is mounted to the VM's `/var/www`.
 There you can place your files so they are accessible on http://localhost:8080
