@@ -1,8 +1,7 @@
-Vagrant Zend Server
+Vagrant Zend Framework template powered by Zend Server
 
 Some important folders:
  - zend server ce: /usr/local/zend
- - apache bestanden: /var/www
+ - public apache root: /vagrant/public
  - custom boot: /usr/local/bin
- - mta: /etc/msmtprc
-
+ - config mail sender: /etc/msmtprc
