@@ -29,4 +29,6 @@ class zend_server::config {
 		require => Class['zend_server::package']
 	}
 
+	include zend_server::virtualhost
+
 }
