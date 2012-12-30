@@ -40,7 +40,7 @@ Vagrant::Config.run do |config|
   # an identifier, the second is the path on the guest to mount the
   # folder, and the third is the path on the host to the actual folder.
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
-  config.vm.share_folder "public_html", "/var/www/", "~/Public/"
+  # config.vm.share_folder "public_html", "/vagrant/public/", "~"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
@@ -65,12 +65,12 @@ Vagrant::Config.run do |config|
     puppet.manifest_file  = "base.pp"
     puppet.module_path    = "puppet/modules/"
     puppet.options        = "--verbose --debug"
-    puppet.facter         = {
-      "root_emailaddress"  => "johndoe@example.com",
-      "relayhost"          => "smtp.example.com",
-      "relayhost_username" => "john@example.com",
-      "relayhost_password" => "mysecretpassword1019*&^&^"
-    }
+    #puppet.facter         = {
+    #  "root_emailaddress"  => "johndoe@example.com",
+      #"relayhost"          => "smtp.example.com",
+      #{}"relayhost_username" => "john@example.com",
+      #{}"relayhost_password" => "mysecretpassword1019*&^&^"
+    #}
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path (relative
