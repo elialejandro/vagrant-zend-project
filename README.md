@@ -17,7 +17,7 @@ Está basado en **precise32 box** desde www.vagrantbox.es y contiene el siguient
 * postfix
 
 ## Como usar ##
-* Clona el proyecto
+* Clona el proyecto **git clone --recursive git@github.com:elialejandro/vagrant-zend-project.git**
 * Modifica **Vagrantfile** y cambia las variables de puppet.facter 
 * Entra al directorio y ejecuta `vagrant up`
 
